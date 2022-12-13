@@ -10,13 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.cj.dto.BoardDTO;
 import com.cj.service.BoardService;
 
 @Controller
-@RequestMapping("/board/")
+@RequestMapping("/board/*")
 public class BoardController {
 
 	@Autowired
@@ -32,7 +31,6 @@ public class BoardController {
 	@GetMapping("detail.do")	//board/detail.do?seq=1
 	public String getBoardDetail(HttpServletRequest request, Model model) throws Exception {
 		int seq = Integer.parseInt(request.getParameter("seq"));
-		System.out.println("seq ="+seq);
 		BoardDTO dto = boardService.boardDetail(seq);
 		model.addAttribute("dto", dto);
 		return "board/boardDetail";
