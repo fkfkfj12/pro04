@@ -6,6 +6,7 @@
 <%@ page import="java.util.*, java.lang.*" %>
 <%@ page import="java.text.*, java.net.InetAddress" %>
 <c:set var="path1" value="${pageContext.request.contextPath }" />
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
 <html>
@@ -16,21 +17,27 @@
 	<title>공지사항 목록</title>
     <!-- 헤드 부분 인클루드 -->
     <jsp:include page="../include/head.jsp"></jsp:include>
+  
+    
+    
+	<link href="${path}/resources/css/ceo.css" rel="stylesheet"/>
 </head>
+ 
 <body>
 	<header id="header">
 		<!-- 헤더 부분 인클루드 -->
 	 	<jsp:include page="../include/hd.jsp"></jsp:include>
     </header>
-	
-	 <div class="conSection kepco_ceo">
+	<div class="content" id="content">
+	    <div class="row column text-center">
 					<div class="txt_dsc">
 						<div class="kebahp00201">
 							<img class="ceo_img" src="https://home.kepco.co.kr/kepco/front/img/sub_r/ceo_img.png" alt="사장님 사진" />
 							<h3 class="ceo_title"> <em class="bold m_yellow">‘세계 최고의 에너지플랫폼 기업’</em> 으로 <br/> &nbsp;한 단계 도약하겠습니다.</h3>
 						</div>
 						<div class="txt2">
-						<div class="mt20">한국전력을 찾아주셔서 반갑습니다.</div>
+					
+						<div class="mt21">한국전력을 찾아주셔서 반갑습니다.</div>
 						<div class="mt20">한국전력은 <span>지난 120여 년</span> 동안 <span>안정적 전력공급</span>으로 우리나라의 <span>산업발전을 뒷받침</span>하며 꾸준히 성장해 왔습니다. <br><span>국민과 고객 여러분의 따뜻한 응원</span> 덕분입니다.</div>
 
 						<div class="mt20"><span>탄소중립(Carbon Neutral)</span> 시대를 맞아 한국전력은 <span>에너지 패러다임 변화를 선도</span>하기 위해  한층 더 노력하고 있습니다. 전력산업의 <span>탈탄소화,</span> 전력생산과 소비의 <span>분산화,</span> 전력 생태계 전반의 <span>지능화</span>를 이끌어 가겠습니다.</div>
@@ -51,6 +58,8 @@
 	
 	
 	</div>
+	
+	
     <footer id="footer" class="footer-nav row expanded collapse">
     	<!-- 푸터 부분 인클루드 -->
     	<jsp:include page="../include/ft.jsp"></jsp:include>

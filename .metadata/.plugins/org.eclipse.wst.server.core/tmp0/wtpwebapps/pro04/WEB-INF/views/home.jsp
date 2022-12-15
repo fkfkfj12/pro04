@@ -6,6 +6,7 @@
 <%@ page import="java.util.*, java.lang.*" %>
 <%@ page import="java.text.*, java.net.InetAddress" %>
 <c:set var="path2" value="${pageContext.request.contextPath }" />
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +19,7 @@
     <style>
     .lead, .subheader { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
     </style>
+    	<link href="${path}/resources/css/home.css" rel="stylesheet"/>
 </head>
 <body>
 <header id="header">
@@ -148,6 +150,7 @@
           <a href="https://www.kentech.ac.kr/mainIntro/introhtml.do">한국에너지 공과 대학교</a>
           <p class="pic"><img src="https://home.kepco.co.kr/kepco/front/img/main_r/story_bg9.jpg" alt="image of a planet called Pegasi B"></p>
           <p class="lead">미래  에너지 산업을 이끌어갈 글로벌 연구 창업 대학교</p>
+          <p class="subheader">"대학교 들어오세요 좋을거에요</p>
           
         </div>
       </div>
@@ -156,7 +159,7 @@
           <a href="https://en-ter.co.kr/main.do">에너지 마켓 플레이스</a>
           <p class="pic"><img src="https://home.kepco.co.kr/kepco/front/img/main_r/story_bg10.jpg" alt="image of a planet called Pegasi B"></p>
           <p class="lead">한전의 새로운 에너지 터전 에너지분야 비즈매칭플랫폼</p>
-          
+          <p class="subheader">"한전이 별걸 다하네</p>
         </div>
       </div>
     
