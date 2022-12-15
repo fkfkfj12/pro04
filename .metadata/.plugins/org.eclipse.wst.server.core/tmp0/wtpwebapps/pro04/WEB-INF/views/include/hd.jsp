@@ -12,7 +12,7 @@
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
        <li class="menu-text"><a href="/myapp/" class="logo">한국전력</a></li>
-       
+       <li><a href="${path1 }/ceo/ceo.do">CEO 소개</a></li>
        <li class="has-submenu">
 			<a href="#">Community</a>
 			<ul class="submenu menu vertical" data-submenu>

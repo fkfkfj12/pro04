@@ -1,0 +1,202 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>공지사항 목록</title>
+    <!-- 헤드 부분 인클루드 -->
+    
+
+
+
+
+<!-- <script src="include/jquery.js"></script>
+<script src="include/foundation.js"></script>
+<link href="inculde/foundation.css" rel="stylesheet" /> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-prototype.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-rtl.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordion.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordionMenu.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdownMenu.min.js"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="resources/css/normalize.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script>
+  $(document).ready(function(){
+	  $(document).foundation();
+  });
+</script>
+<style>
+ul { list-style:none; }
+#gnb > ul > li[role="menuitem"] { height:38px; }
+#gnb > ul > li.menu-text[role="menuitem"] { padding-top:0px; padding-bottom:0px; }
+.h1 { padding-top:0.9rem; padding-bottom:0.3rem; }
+.container { clear:both; width:1200px; margin:0 auto; }
+.container::after { content:""; display:block; width:100%; clear:both; }
+#table1 th { border-bottom:1px solid #fff; }
+.footer-nav {	background-color:#2d2d2d; height:80px; box-sizing:border-box; overflow:hidden; }
+.footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
+.footer-nav > article > div { float:left; }
+.footer-nav-left { color:#fff; width:25%; line-height:80px; }
+.footer-nav-center {
+	width:50%;
+}
+.footer-nav-right {
+	width:25%; 
+}
+#footer .footer-nav-left .footer-copyright {
+	line-height:80px;
+}
+#footer > article > div > ul > li.footer-nav-item { 
+	float:left; width:auto; padding:1.8rem;  
+	min-width:40px;
+}
+#footer > article > div.footer-nav-right > ul > li.footer-nav-item {
+	width:25%; height:25%;
+}
+</style>
+</head>
+<body>
+	<header id="header">
+		<!-- 헤더 부분 인클루드 -->
+	 	
+
+
+
+
+
+
+<!-- 헤더 내용 기술 -->
+<nav class="top-bar">
+   <div class="top-bar-left" id="gnb">
+   	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
+     <ul class="dropdown menu" data-dropdown-menu>
+       <li class="menu-text"><a href="/myapp/" class="logo">한국전력</a></li>
+       <li><a href="/views/ceo/ceo.jsp">CEO 소개</a></li>
+       <li class="has-submenu">
+			<a href="#">Community</a>
+			<ul class="submenu menu vertical" data-submenu>
+				<li><a href="/myapp/board/list.do">공지사항</a></li>
+				
+				<li><a href="/myapp/free/list.do">자유게시판</a></li>
+			</ul>
+    	</li>
+     
+     </ul>
+   </div>
+            
+     <div class="top-bar-right">
+       <ul class="menu">
+        
+          <li><a href="/myapp/member/loginForm.do">로그인</a></li>
+          <li><a href="/myapp/member/agree.do">회원가입</a></li>
+        
+          
+          
+       </ul>
+     </div>
+  </nav>
+    <!-- End Top Bar -->
+
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+      <ul class="orbit-container">
+        <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+        <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+        <li class="orbit-slide is-active">
+          <img src="https://home.kepco.co.kr/kepco/front/img/main_r/main31.jpg" alt="더미이미지">
+        </li>
+        <li class="orbit-slide">
+          <img src="https://home.kepco.co.kr/kepco/front/img/main_r/main11.jpg" alt="더미이미지">
+        </li>
+        <li class="orbit-slide">
+          <img src="https://home.kepco.co.kr/kepco/front/img/main_r/main21.jpg" alt="더미이미지">
+        </li>
+        
+      </ul>
+    </div>
+    </header>
+	 <div class="conSection kepco_ceo">
+					<div class="txt_dsc">
+						<div class="kebahp00201">
+							<img class="ceo_img" src="https://home.kepco.co.kr/kepco/front/img/sub_r/ceo_img.png" alt="사장님 사진" />
+							<h3 class="ceo_title"> <em class="bold m_yellow">‘세계 최고의 에너지플랫폼 기업’</em> 으로 <br/> &nbsp;한 단계 도약하겠습니다.</h3>
+						</div>
+						<div class="txt2">
+						<div class="mt20">한국전력을 찾아주셔서 반갑습니다.</div>
+						<div class="mt20">한국전력은 <span>지난 120여 년</span> 동안 <span>안정적 전력공급</span>으로 우리나라의 <span>산업발전을 뒷받침</span>하며 꾸준히 성장해 왔습니다. <br><span>국민과 고객 여러분의 따뜻한 응원</span> 덕분입니다.</div>
+
+						<div class="mt20"><span>탄소중립(Carbon Neutral)</span> 시대를 맞아 한국전력은 <span>에너지 패러다임 변화를 선도</span>하기 위해  한층 더 노력하고 있습니다. 전력산업의 <span>탈탄소화,</span> 전력생산과 소비의 <span>분산화,</span> 전력 생태계 전반의 <span>지능화</span>를 이끌어 가겠습니다.</div>
+
+						<div class="mt20">또한 <span>시대의 흐름과 요구</span>를 조금 먼저 호흡하고, 
+						<span>연대와 협력의 구심점</span>이 되어 <span>지역사회와의 동반성장</span>을 추진해 가겠습니다. <br/> <span>소외된 이웃</span>을 살피며, <span>고객과 대화하고 소통</span>하기 위해서도 최선을 다할 것입니다.</div>
+
+						<div class="mt20"><span>‘세계 최고의 에너지플랫폼 기업’</span>으로 한 단계 도약하는 한국전력의 모습을 계속 지켜봐 주십시오.  <br/><span>유능한 KEPCO, 믿을 수 있는 KEPCO, 존경받는 KEPCO</span>로 발전해 나가겠습니다. 고맙습니다.</div>
+						</div>
+					</div>
+					<div class="ceo">한국전력공사  대표이사 / 사장<img src="https://home.kepco.co.kr/kepco/front/img/kepcointro/img_kebahp00201_02.png" alt="정승일"></div>
+				</div><!-- conSection e -->         
+    <footer id="footer" class="footer-nav row expanded collapse">
+    	<!-- 푸터 부분 인클루드 -->
+    	
+
+
+
+
+<!-- 푸터 내용 기술 -->
+<article class="ft_wrap">
+	<div class="footer-nav-left">
+	  <p class="footer-copyright">©2022 Company WebApplication</p>
+	</div>
+	<div class="footer-nav-center">
+	  <ul class="footer-nav-menu">
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/sites/docs/">Docs</a>
+	    </li>
+	  </ul>
+	</div>
+	<div class="footer-nav-right">
+	  <ul class="footer-nav-menu-icons">
+	    <li class="footer-nav-item">
+	      <a href="get-involved/support.html"><img class="footer-social-icon" src="/myapp/resources/icon/email-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="/myapp/resources/icon/facebook-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="/myapp/resources/icon/twitter-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="/myapp/resources/icon/youtube-icon.svg" alt=""></a>
+	    </li>
+	  </ul>
+	</div>
+</article>
+    </footer>
+</body>
+</html>
